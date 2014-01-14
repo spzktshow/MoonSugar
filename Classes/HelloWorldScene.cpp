@@ -1,5 +1,6 @@
 #include "HelloWorldScene.h"
-
+#include "support/tinyxml2/tinyxml2.h"
+#include "moonSugar/XmlUtils.h"
 USING_NS_CC;
 
 CCScene* HelloWorld::scene()
@@ -72,6 +73,12 @@ bool HelloWorld::init()
 
     // add the sprite as a child to this layer
     this->addChild(pSprite, 0);
+    
+    tinyxml2::XMLDocument * root = new tinyxml2::XMLDocument;
+	root->LoadFile("configXml/actor.xml");
+	//moonSugar::XmlUtils::printfXml(root);
+    //FILE* fp = 0;
+    //fp = fopen("configXml/actor.xml", "rb");
     
     return true;
 }
