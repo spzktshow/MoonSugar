@@ -235,6 +235,7 @@
 		41BC70E615BF81A5006A0A6C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41BC70DE15BF81A5006A0A6C /* MainMenu.xib */; };
 		41BC70E715BF81A5006A0A6C /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 41BC70E015BF81A5006A0A6C /* Icon.icns */; };
 		41BC70E815BF81A5006A0A6C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 41BC70E115BF81A5006A0A6C /* main.m */; };
+		648A63091886036C004D8660 /* MSBehaviorTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 648A63071886036C004D8660 /* MSBehaviorTree.cpp */; };
 		64B5D64D18857F5A00D7E78A /* TypeConver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64B5D64918857F5A00D7E78A /* TypeConver.cpp */; };
 		64B5D64E18857F5A00D7E78A /* XmlUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64B5D64B18857F5A00D7E78A /* XmlUtils.cpp */; };
 		64B5D65018857F6A00D7E78A /* configXml in Resources */ = {isa = PBXBuildFile; fileRef = 64B5D64F18857F6A00D7E78A /* configXml */; };
@@ -718,6 +719,8 @@
 		41BC70E115BF81A5006A0A6C /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = SOURCE_ROOT; };
 		41BC70E215BF81A5006A0A6C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
 		41BC70E315BF81A5006A0A6C /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = SOURCE_ROOT; };
+		648A63071886036C004D8660 /* MSBehaviorTree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MSBehaviorTree.cpp; sourceTree = "<group>"; };
+		648A63081886036C004D8660 /* MSBehaviorTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSBehaviorTree.h; sourceTree = "<group>"; };
 		64B5D64818857F5A00D7E78A /* MoonSugar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoonSugar.h; sourceTree = "<group>"; };
 		64B5D64918857F5A00D7E78A /* TypeConver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TypeConver.cpp; sourceTree = "<group>"; };
 		64B5D64A18857F5A00D7E78A /* TypeConver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypeConver.h; sourceTree = "<group>"; };
@@ -1675,6 +1678,8 @@
 		64B5D64718857F5A00D7E78A /* moonSugar */ = {
 			isa = PBXGroup;
 			children = (
+				648A63071886036C004D8660 /* MSBehaviorTree.cpp */,
+				648A63081886036C004D8660 /* MSBehaviorTree.h */,
 				64B5D64818857F5A00D7E78A /* MoonSugar.h */,
 				64B5D64918857F5A00D7E78A /* TypeConver.cpp */,
 				64B5D64A18857F5A00D7E78A /* TypeConver.h */,
@@ -1916,6 +1921,7 @@
 				15C1593B168315E500D239F2 /* CCControlUtils.cpp in Sources */,
 				15C1593C168315E500D239F2 /* CCInvocation.cpp in Sources */,
 				15C1593D168315E500D239F2 /* CCScale9Sprite.cpp in Sources */,
+				648A63091886036C004D8660 /* MSBehaviorTree.cpp in Sources */,
 				15C15942168315E500D239F2 /* CCScrollView.cpp in Sources */,
 				15C15943168315E500D239F2 /* CCSorting.cpp in Sources */,
 				15C15944168315E500D239F2 /* CCTableView.cpp in Sources */,
