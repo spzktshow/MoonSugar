@@ -69,17 +69,22 @@ bool HelloWorld::init()
     CCSprite* pSprite = CCSprite::create("HelloWorld.png");
 
     // position the sprite on the center of the screen
-    pSprite->setPosition(ccp(visibleSize.width/2 + origin.x, visibleSize.height/2 + origin.y));
+    //pSprite->setPosition(ccp(visibleSize.width/2 + origin.x, visibleSize.height/2 + origin.y));
 
     // add the sprite as a child to this layer
-    this->addChild(pSprite, 0);
+    //this->addChild(pSprite, 0);
     
+    
+    std::string pathKey("configXml/actor.xml");
+    
+    pathKey = CCFileUtils::sharedFileUtils()->fullPathForFilename(pathKey.c_str());
+    CCLOG("%s", pathKey.c_str());
     tinyxml2::XMLDocument * root = new tinyxml2::XMLDocument;
-	root->LoadFile("configXml/actor.xml");
-	//moonSugar::XmlUtils::printfXml(root);
-    //FILE* fp = 0;
-    //fp = fopen("configXml/actor.xml", "rb");
-    
+	root->LoadFile(pathKey.c_str());
+	moonSugar::XmlUtils::printfChildren(root->FirstChildElement()->FirstChildElement());//(root);
+    //unsigned long nSize = 0;
+   // unsigned char* pBuffer = CCFileUtils::sharedFileUtils()->getFileData(pathKey.c_str(), "rb", &nSize);
+    //CCLOG("%s", pBuffer);
     return true;
 }
 

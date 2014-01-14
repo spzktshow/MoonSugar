@@ -235,6 +235,7 @@
 		64182E88188421C900FE2E27 /* TypeConver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64182E84188421C900FE2E27 /* TypeConver.cpp */; };
 		64182E89188421C900FE2E27 /* XmlUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64182E86188421C900FE2E27 /* XmlUtils.cpp */; };
 		64182E8F1884309000FE2E27 /* configXml in Resources */ = {isa = PBXBuildFile; fileRef = 64182E8E1884309000FE2E27 /* configXml */; };
+		64B5D64518857C2600D7E78A /* ttt.png in Resources */ = {isa = PBXBuildFile; fileRef = 64B5D64418857C2600D7E78A /* ttt.png */; };
 		7855E0E1153FEF240059DD9A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7855E0DF153FEF240059DD9A /* Default.png */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712461292920000B8313A /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB212928DE900B8313A /* libxml2.dylib */; };
@@ -735,6 +736,7 @@
 		64182E86188421C900FE2E27 /* XmlUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XmlUtils.cpp; sourceTree = "<group>"; };
 		64182E87188421C900FE2E27 /* XmlUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XmlUtils.h; sourceTree = "<group>"; };
 		64182E8E1884309000FE2E27 /* configXml */ = {isa = PBXFileReference; lastKnownFileType = folder; path = configXml; sourceTree = "<group>"; };
+		64B5D64418857C2600D7E78A /* ttt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ttt.png; sourceTree = "<group>"; };
 		7855E0DF153FEF240059DD9A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = SOURCE_ROOT; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB212928DE900B8313A /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
@@ -1732,6 +1734,7 @@
 		78C7DDAA14EBA5050085D0C2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				64B5D64418857C2600D7E78A /* ttt.png */,
 				64182E8E1884309000FE2E27 /* configXml */,
 				1AFAF8B916D35E4900DB1158 /* CloseNormal.png */,
 				1AFAF8BA16D35E4900DB1158 /* CloseSelected.png */,
@@ -1825,6 +1828,7 @@
 				D4EF94A015BD2D9800D803EB /* Icon-144.png in Resources */,
 				D41A0AD1160F154A004552AE /* Default-568h@2x.png in Resources */,
 				D446FD6E16102124000ADA7B /* Default@2x.png in Resources */,
+				64B5D64518857C2600D7E78A /* ttt.png in Resources */,
 				15A3D9961682F7F9002FB0C5 /* CMakeLists.txt in Resources */,
 				1AFAF8BC16D35E4900DB1158 /* CloseNormal.png in Resources */,
 				1AFAF8BD16D35E4900DB1158 /* CloseSelected.png in Resources */,

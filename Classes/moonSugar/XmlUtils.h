@@ -17,9 +17,9 @@ public:
     /**解析节点**/
 	static std::string parseElement(tinyxml2::XMLElement * element);
     /**返回下一子级的节点列表**/
-	static std::vector<tinyxml2::XMLElement*> getChildren(tinyxml2::XMLElement * node);
+	static std::vector<tinyxml2::XMLElement*> getChildren(tinyxml2::XMLNode * node);
     /**传入节点下一子级节点列表**/
-	static void printfChildren(tinyxml2::XMLElement * node);
+	static void printfChildren(tinyxml2::XMLNode * node);
 protected:
 	static void roundPrintfXml(tinyxml2::XMLElement * parent, int level);
 	static std::string createSpaceByLevel(int level);

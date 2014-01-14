@@ -83,7 +83,9 @@ std::string XmlUtils::parseAttribute(tinyxml2::XMLElement * element)
 		comp += title;
 		comp += nameStr;
 		comp += "=";
+        comp += "'";
 		comp += valueStr;
+        comp += "'";
 		attribute = attribute->Next();
 	}
 	return comp;
@@ -99,19 +101,19 @@ std::string XmlUtils::parseElement(tinyxml2::XMLElement * element)
     return title;
 }
 
-std::vector<tinyxml2::XMLElement*> XmlUtils::getChildren(tinyxml2::XMLElement * node)
+std::vector<tinyxml2::XMLElement*> XmlUtils::getChildren(tinyxml2::XMLNode * node)
 {
 	std::vector<tinyxml2::XMLElement*> children;
 	tinyxml2::XMLElement * element = node->FirstChildElement();
 	while(element)
 	{
 		children.push_back(element);
-		element = node->NextSiblingElement();
+		element = element->NextSiblingElement();
 	}
 	return children;
 }
 
-void XmlUtils::printfChildren(tinyxml2::XMLElement * node)
+void XmlUtils::printfChildren(tinyxml2::XMLNode * node)
 {
 	std::vector<tinyxml2::XMLElement*> children = getChildren(node);
     tinyxml2::XMLElement * element;
