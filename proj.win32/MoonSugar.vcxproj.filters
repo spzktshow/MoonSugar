@@ -33,6 +33,9 @@
     <ClCompile Include="..\Classes\moonSugar\XmlUtils.cpp">
       <Filter>Classes\moonSugar</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\lighOfHope\ActionsBehaviorTree.cpp">
+      <Filter>Classes\lightOfHope</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -55,6 +58,12 @@
     </ClInclude>
     <ClInclude Include="..\Classes\moonSugar\XmlUtils.h">
       <Filter>Classes\moonSugar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\lighOfHope\ActionsBehaviorTree.h">
+      <Filter>Classes\lightOfHope</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\lighOfHope\LightOfHope.h">
+      <Filter>Classes\lightOfHope</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
