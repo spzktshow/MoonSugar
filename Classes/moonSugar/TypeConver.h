@@ -10,6 +10,7 @@ namespace moonSugar {
 		static char * ConstCharToChar(const char * constChar);
 		static char * StringToChar(std::string * str);
 		static std::string * CharToString(char * charStr);
+		static int CharToInt(const char * s);
 
 		static char * combinationChar(char * char1, char * char2);
 	};

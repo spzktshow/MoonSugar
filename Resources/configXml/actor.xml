@@ -1,39 +1,4 @@
-<!--
-selector(选择节点):
-sequence(顺序节点):
-condition(条件节点):判断是否拥有相等的条件
-  conditionType:
-    event:判断事件是否相等  eventName:标记需要判断的事件名称
-    state:判断装态是否相等 stateName:标记需要判断的装态名称
-action(动作节点):执行动作
-  actionType:要执行的动作标记
--->
-<nodes>
-  <!--根节点,actor用-->
-  <node type="selector" name="root">
-    <!--directEvent方向事件序列-->
-    <node type="sequence" name ="directorEvent">
-      <!--判断是否是方向事件-->
-      <node type="condition" name="is directEvent" conditionType="event" eventName="directEvent"/>
-      <!--从idle装态转换到run-->
-      <node type="sequence" name="idle to run">
-        <!--判断当前装态是否是idle-->
-        <node type="condition" name="is idle state" conditionType="state" stateName="idle"/>
-        <!--切换到run装态-->
-        <node type="action" name="run" actionType="run"/>
-      </node>
-    </node>
-    <!--cancelDirectEvent取消方向事件-->
-    <node type="sequence" name="cancelDirectEvent">
-      <!--判断是否是取消方向事件-->
-      <node type="condition" name="is cancelDirectEvent" conditionType="event" eventName="cancelDirectEvent"/>
-      <!--从run装态转换到idle-->
-      <node type="sequence" name="run to idle">
-        <!--判断当前装态是否是run-->
-        <node type="condition" name="is run state" conditionType="state" stateName="run"/>
-        <!--切换到idle装态-->
-        <node type="action" name="idle" actionType="idle"/>
-      </node>
-    </node>
-  </node>
-</nodes>
+<!--人物-->
+<actors>
+  <actor action="1"/>
+</actors>

@@ -27,4 +27,21 @@ namespace moonSugar {
 		strcat(valueChar, char2);
 		return valueChar;
 	}
+
+	int TypeConver::CharToInt(const char * s)
+	{
+		int sign = 1;
+		if (*s == '-')
+		{
+			sign = -1;
+			s ++;
+		}
+		int num = 0;
+		while(*s)
+		{
+			num = ((*s) - '0') + num * 10;
+			s ++;
+		}
+		return num * sign;
+	}
 }

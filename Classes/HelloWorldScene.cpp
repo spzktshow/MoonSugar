@@ -1,6 +1,7 @@
 #include "HelloWorldScene.h"
 #include "support/tinyxml2/tinyxml2.h"
 #include "moonSugar/XmlUtils.h"
+#include "moonSugar/MSBehaviorTree.h"
 USING_NS_CC;
 
 CCScene* HelloWorld::scene()
@@ -75,16 +76,18 @@ bool HelloWorld::init()
     //this->addChild(pSprite, 0);
     
     
-    std::string pathKey("configXml/actor.xml");
+    std::string pathKey("configXml/actions.xml");
     
     pathKey = CCFileUtils::sharedFileUtils()->fullPathForFilename(pathKey.c_str());
     CCLOG("%s", pathKey.c_str());
     tinyxml2::XMLDocument * root = new tinyxml2::XMLDocument;
 	root->LoadFile(pathKey.c_str());
-	moonSugar::XmlUtils::printfChildren(root->FirstChildElement()->FirstChildElement());//(root);
+	//moonSugar::XmlUtils::printfChildren(root->FirstChildElement()->FirstChildElement());//(root);
     //unsigned long nSize = 0;
    // unsigned char* pBuffer = CCFileUtils::sharedFileUtils()->getFileData(pathKey.c_str(), "rb", &nSize);
     //CCLOG("%s", pBuffer);
+	moonSugar::MSBehaviorTreeParser * parser = new moonSugar::MSBehaviorTreeParser;
+	moonSugar::ActionAssemble * actions = parser->parser(root);
     return true;
 }
 
