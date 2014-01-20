@@ -235,6 +235,7 @@
 		64182E88188421C900FE2E27 /* TypeConver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64182E84188421C900FE2E27 /* TypeConver.cpp */; };
 		64182E89188421C900FE2E27 /* XmlUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64182E86188421C900FE2E27 /* XmlUtils.cpp */; };
 		64182E8F1884309000FE2E27 /* configXml in Resources */ = {isa = PBXBuildFile; fileRef = 64182E8E1884309000FE2E27 /* configXml */; };
+		64380699188D504300295117 /* MSBehaviorTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64380697188D504300295117 /* MSBehaviorTree.cpp */; };
 		64B5D64518857C2600D7E78A /* ttt.png in Resources */ = {isa = PBXBuildFile; fileRef = 64B5D64418857C2600D7E78A /* ttt.png */; };
 		7855E0E1153FEF240059DD9A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7855E0DF153FEF240059DD9A /* Default.png */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
@@ -736,6 +737,8 @@
 		64182E86188421C900FE2E27 /* XmlUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XmlUtils.cpp; sourceTree = "<group>"; };
 		64182E87188421C900FE2E27 /* XmlUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XmlUtils.h; sourceTree = "<group>"; };
 		64182E8E1884309000FE2E27 /* configXml */ = {isa = PBXFileReference; lastKnownFileType = folder; path = configXml; sourceTree = "<group>"; };
+		64380697188D504300295117 /* MSBehaviorTree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MSBehaviorTree.cpp; sourceTree = "<group>"; };
+		64380698188D504300295117 /* MSBehaviorTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSBehaviorTree.h; sourceTree = "<group>"; };
 		64B5D64418857C2600D7E78A /* ttt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ttt.png; sourceTree = "<group>"; };
 		7855E0DF153FEF240059DD9A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = SOURCE_ROOT; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -1721,6 +1724,8 @@
 		64182E82188421C900FE2E27 /* moonSugar */ = {
 			isa = PBXGroup;
 			children = (
+				64380697188D504300295117 /* MSBehaviorTree.cpp */,
+				64380698188D504300295117 /* MSBehaviorTree.h */,
 				64182E83188421C900FE2E27 /* MoonSugar.h */,
 				64182E84188421C900FE2E27 /* TypeConver.cpp */,
 				64182E85188421C900FE2E27 /* TypeConver.h */,
@@ -1962,6 +1967,7 @@
 				15A3DA551682F826002FB0C5 /* CCEditBox.cpp in Sources */,
 				15A3DA571682F826002FB0C5 /* CCEditBoxImplIOS.mm in Sources */,
 				15A3DA591682F826002FB0C5 /* CCScrollView.cpp in Sources */,
+				64380699188D504300295117 /* MSBehaviorTree.cpp in Sources */,
 				15A3DA5A1682F826002FB0C5 /* CCSorting.cpp in Sources */,
 				15A3DA5B1682F826002FB0C5 /* CCTableView.cpp in Sources */,
 				15A3DA5C1682F826002FB0C5 /* CCTableViewCell.cpp in Sources */,
